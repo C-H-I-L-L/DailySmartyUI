@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-class Logo extends Component {
+import * as actions from '../actions';
+
+class RecentPosts extends Component {
+
+  componentDidMount() {
+    this.props.fetchRecentPosts();
+  }
   render() {
     return (
         <div className="recent-posts">
@@ -20,4 +27,4 @@ class Logo extends Component {
   }
 }
 
-export default Logo;
+export default connect(null, actions)(RecentPosts);
