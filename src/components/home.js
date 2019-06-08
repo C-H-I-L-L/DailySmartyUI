@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+
 import Logo from './logo';
-import Searchbar from './searchbar';
+import SearchBar from './searchBar';
 import RecentPosts from './recentPosts';
 
 export default class App extends Component {
   render() {
     return (
-      <div className='container'>
+      <div>
         <div>
-          <Logo />
-          DailySmarty
-          <Searchbar />
-          <RecentPosts />
+          <Logo/>
+          <SearchBar/>
+          <RecentPosts/>
         </div>
       </div>
     );
